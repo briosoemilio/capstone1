@@ -1,0 +1,44 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.body-start {
+	background-image: url(./photos/startpagebg.jpg);
+	background-size: cover;
+}
+
+
+.set-height {
+	height: 100vh;
+}
+
+.h1-start {
+	font-size: 96px;
+	width: 50vh;
+}
+
+.h1-fade {
+animation: fade-in-h1 3s;
+	margin: 0;
+}
+
+@keyframes fade-in-h1 {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+.lets-start {
+	font-family: 'Courier Prime', monospace;
+	font-size: 64px;
+	background: rgba(41, 43, 44, 0.25);
+	animation: fade-in-h3 5s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes fade-in-h3 {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}

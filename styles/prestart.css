@@ -1,0 +1,24 @@
+.body-prestart {
+	font-family: 'Montserrat', sans-serif;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+
+.set-height {
+	height: 100vh;
+}
+
+.h1-prestart {
+	font-size: 96px;
+}
+
+.h1-fade {
+	animation: fade 5s;
+}
+
+@keyframes fade {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}

@@ -1,0 +1,843 @@
+Universal CSS*/
+html, body {
+	overflow-x: hidden;
+}
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*1.) Pre-Start.CSS*/ 
+.body-prestart {
+	font-family: 'Montserrat', sans-serif;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+
+.set-height {
+	height: 100vh;
+}
+
+.h1-prestart {
+	font-size: 96px;
+}
+
+.pre-start-h1-fade {
+	animation: fade 3s;
+}
+
+@keyframes fade {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+/*End of Pre-Start.CSS*/
+
+/*2.) Start.CSS*/
+
+.body-start {
+	background-color: black;
+	animation: start-bg-change 1s;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes start-bg-change {
+	100%{background-image: url(./photos/startpagebg.jpg);
+		background-size: cover;
+		background-position: center}
+	}
+
+
+	.h1-start {
+		font-size: 64px;
+		/*	width: 50vh;*/
+	}
+
+	.start-h1-fade {
+		animation: fade-in-h1 3s;
+		animation-delay: 3s;
+		animation-fill-mode: backwards;
+		margin: 0;
+	}
+
+	@keyframes fade-in-h1 {
+		0%{opacity: 0;}
+		100%{opacity: 1;}
+	}
+
+	.lets-start {
+		font-family: 'Courier Prime', monospace;
+		font-size: 48px;
+		width: 300px;
+		background: rgba(41, 43, 44, 0.25);
+		animation: fade-in-h3 3s;
+		animation-delay: 8s;
+		animation-fill-mode: backwards;
+	}
+
+	@keyframes fade-in-h3 {
+		0%{opacity: 0;}
+		100%{opacity: 1;}
+	}
+/*End of Start.CSS*/
+
+/*3.) Start of Home.CSS*/
+	.body-home {
+		background-color: black;
+		overflow: hidden;
+	}
+
+	.nav-bar-home h1 {
+		color: white;
+		width: 250px;
+		margin: auto;
+	}
+
+	.row {
+		text-align: center;
+	}
+
+	.nav-bar-home h1 {
+		font-size: 40px;
+		width: 250px;
+		background-color: black;
+		transition: ease-out;
+		transition-property: font-size;
+		transition-duration: 0.5s;
+	}
+
+	.nav-bar-home h1:hover {
+		font-size: 64px;
+		width: 355px;
+		background: rgba(255, 255, 0, 0.25);
+	}
+
+	.nav-bar-home a {
+		color: white;
+	}
+
+
+/*End of Home.CSS*/
+
+/*4.) Start of bio.CSS*/
+
+	.body-bio {
+		background-image: url(./photos/homepagebg.jpg);
+		background-size: cover;
+		background-position: center;
+		overflow: hidden;
+	}
+
+	.nav-bar-bio h1 {
+		font-size: 35px;
+	}
+
+	.nav-bar-bio a {
+		color: white;
+	}
+
+	.nav-bar-bio h1 {
+		font-size: 35px;
+		width: 135;
+		transition: ease-out;
+		transition-property: font-size;
+		transition-duration: 0.5s;
+	}
+
+	.nav-bar-bio h1:hover {
+		font-size: 45px;
+		width: 250px;
+		background: rgba(255, 255, 0, 0.25);
+	}
+
+
+	#home-icon-bio {
+		color: white;
+		padding: 20px;
+	}
+
+	.card-bio > div{
+		background: rgba(41, 43, 44, 0.25);
+	}
+
+	@media (min-width: 1200px) and (max-width: 9999.98px){
+		.card-body {
+			padding-left: 100px;
+		}
+
+		.card-bio h1 {
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+			font-size: 64px;
+		}
+
+		.card-bio p {
+			font-family: 'Courier Prime', monospace;
+			color: white;
+			font-size: 24px;	
+		}
+	}
+
+	@media (min-width: 992px) and (max-width: 1199.98px){
+		.card-body {
+			padding-left: 100px;
+		}
+
+		.card-bio h1 {
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+			font-size: 64px;
+		}
+
+		.card-bio p {
+			font-family: 'Courier Prime', monospace;
+			color: white;
+			font-size: 36px;	
+		}
+	}	
+
+
+	@media (min-width: 768px) and (max-width: 991.98px){
+		.body-bio {
+			overflow: auto;
+		}
+
+		.card-body {
+			padding-left: 100px;
+		}
+
+		.card-bio h1 {
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+			font-size: 64px;
+		}
+
+		.card-bio p {
+			font-family: 'Courier Prime', monospace;
+			color: white;
+			font-size: 36px;	
+		}		
+	}
+
+	@media (min-width: 100px) and (max-width: 767.98px){
+		.body-bio {
+			overflow: auto;
+		}
+
+		.card-body {
+			padding-left: 0px;
+		}
+
+		.card-bio h1 {
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+			font-size: 48px;
+		}
+
+		.card-bio p {
+			font-family: 'Courier Prime', monospace;
+			color: white;
+			font-size: 18px;	
+		}		
+	}
+
+	.card-bio {
+		background: none;
+		border: none;
+	}
+
+/*End of bio.CSS*/
+
+/* 5.) start of skills.CSS*/
+
+	.body-skills {
+		background-image: url(./photos/skillspagebg.jpg);
+		background-size: cover;
+		background-position: center;
+		overflow: auto;
+	}
+
+	.body-skills a {
+		color: black;
+	}
+
+	.card-skills {
+		background: none;
+		border: none;
+	}
+
+	.nav-bar-skills h1 {
+		font-size: 35px;
+		width: 135;
+		transition: ease-out;
+		transition-property: font-size;
+		transition-duration: 0.5s;
+	}
+
+	.nav-bar-skills h1:hover {
+		font-size: 45px;
+		width: 250px;
+		background: rgba(255, 255, 0, 0.25);
+	}
+
+	.card-body-front-end,.card-body-back-end,.card-body-full-stack  {
+		border: none;
+		background: rgba(255,255,255,0.25);
+	}
+
+	@media (min-width: 1200px) {
+		#accordion button {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 48px;	
+			border: solid;
+		}
+
+		#HTML-content {
+			width: 300px;
+			font-size: 36px;
+			text-align: left;
+		}
+
+		#html-pic, #css-pic, #bootstrap-pic {
+			width: 200px;
+		}
+
+		#gitlab-pic, #gitbash-pic {
+			width: 300px;
+		}
+
+		#js-pic, #heroku-pic {
+			width: 400px;
+			margin: 50px;
+		}
+
+		#postman-pic {
+			width: 250px;
+		}
+
+		#back-end-content {
+			width: 300px;
+			font-size: 36px;
+			text-align: left;
+		}
+
+		#mongo-pic, #express-pic {
+			width: 300px;
+		}
+
+		#react-pic {
+			width: 300px;
+			margin-right: 50px;
+		}
+
+		#nodejs-pic {
+			width: 250px;
+		}
+	}
+
+	@media (min-width: 992px) and (max-width: 1199.98px){
+		#accordion button {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 40px;	
+			border: solid;
+		}
+
+		#HTML-content {
+			width: 300px;
+			font-size: 36px;
+			text-align: left;
+		}
+
+		#html-pic, #css-pic, #bootstrap-pic {
+			width: 175px;
+		}
+
+		#gitlab-pic, #gitbash-pic {
+			width: 300px;
+		}
+
+		#js-pic, #heroku-pic {
+			width: 400px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		#postman-pic {
+			width: 250px;
+		}
+
+		#back-end-content {
+			width: 300px;
+			font-size: 36px;
+			text-align: left;
+		}
+
+		#mongo-pic {
+			width: 300px;
+			text-align: left;
+		}
+
+		#express-pic {
+			width: 300px;
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		#react-pic {
+			width: 300px;
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		#nodejs-pic {
+			width: 250px;
+			text-align: right;
+			margin-bottom: 25px;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 991.98px){
+		#accordion button {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 30px;	
+			border: solid;
+		}
+
+		#HTML-content {
+			width: 300px;
+			font-size: 36px;
+			text-align: left;
+		}
+
+		#html-pic, #css-pic, #bootstrap-pic {
+			width: 170px;
+			text-align: center;
+		}
+
+		#gitlab-pic, #gitbash-pic {
+			width: 250px;
+		}
+
+		#js-pic, #heroku-pic {
+			width: 400px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		#postman-pic {
+			width: 250px;
+		}
+
+		#back-end-content {
+			width: 300px;
+			font-size: 36px;
+			text-align: left;
+		}
+
+		#mongo-pic {
+			width: 300px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#express-pic {
+			width: 300px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 25px;
+		}
+
+		#react-pic {
+			width: 300px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 25px;
+		}
+
+		#nodejs-pic {
+			width: 250px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 25px;
+		}
+
+	}
+
+	@media (min-width: 321px) and (max-width: 767.98px){
+		#accordion button {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 12px;	
+			border: solid;
+		}
+
+		#HTML-content {
+			width: 300px;
+			font-size: 24px;
+			text-align: left;
+		}
+
+		#html-pic, #css-pic, #bootstrap-pic {
+			width: 170px;
+			text-align: center;
+		}
+
+		#gitlab-pic, #gitbash-pic {
+			width: 200px;
+			text-align: center;
+		}
+
+		#js-pic{
+			width: 300px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		#heroku-pic {
+			width:300px;
+			margin-top: 50px;
+		}
+
+
+		#postman-pic {
+			width: 150px;
+		}
+
+		#back-end-content {
+			width: 300px;
+			font-size: 24px;
+			text-align: left;
+		}
+
+		#mongo-pic {
+			width: 300px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#express-pic {
+			width: 300px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 25px;
+		}
+
+		#react-pic {
+			width: 300px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 25px;
+		}
+
+		#nodejs-pic {
+			width: 250px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 25px;
+		}
+	}
+
+	@media (max-width: 320.98px){
+		#accordion button {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 10px;	
+			border: solid;
+		}
+
+		#HTML-content {
+			width: 300px;
+			font-size: 24px;
+			text-align: left;
+		}
+
+		#html-pic, #css-pic, #bootstrap-pic {
+			width: 170px;
+			text-align: center;
+		}
+
+		#gitlab-pic, #gitbash-pic {
+			width: 200px;
+			text-align: center;
+		}
+
+		#js-pic{
+			width: 250px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		#heroku-pic {
+			width:250px;
+			margin-top: 50px;
+		}
+
+
+		#postman-pic {
+			width: 150px;
+		}
+
+		#back-end-content, #HTML-content{
+			width: 300px;
+			font-size: 18px;
+			text-align: left;
+			overflow: wrap;
+		}
+
+		#mongo-pic {
+			width: 200px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#express-pic {
+			width: 200px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 25px;
+		}
+
+		#react-pic {
+			width: 200px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 25px;
+		}
+
+		#nodejs-pic {
+			width: 150px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 25px;
+		}
+	}
+
+/*end of skills.CSS
+
+/* 6.) Start of projects.CSS */
+	.body-projects {
+		background-image: url(./photos/projectsbg.jpg);
+		background-size: cover;
+		background-position: center;
+		overflow: hidden;
+	}
+
+	.body-projects a {
+		color: white;
+	}
+
+	.nav-bar-projects h1 {
+		font-size: 35px;
+		width: 135;
+		transition: ease-out;
+		transition-property: font-size;
+		transition-duration: 0.5s;
+	}
+
+	.nav-bar-projects h1:hover {
+		font-size: 45px;
+		width: 250px;
+		background: rgba(255, 255, 0, 0.25);
+	}
+
+	.card-first-project {
+		width: 300px;
+		height: auto;
+	}
+
+	@media (min-width: 100px) and (max-width: 1024px) {
+		.body-projects {
+			overflow: auto;
+		}
+
+		.card-first-project {
+			width: 70%;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 20px;
+		}
+	}
+/*end of projects.CSS*/
+
+/*7.) Start of work-expi.CSS*/
+	.body-work-expi {
+		background-image: url(./photos/workexpibg.jpg);
+		background-size: cover;
+		background-position: center;
+		overflow: auto;
+	}
+
+	.body-work-expi a {
+		color: black;
+	}
+
+	.nav-bar-work-expi h1 {
+		font-size: 35px;
+		width: 135;
+		transition: ease-out;
+		transition-property: font-size;
+		transition-duration: 0.5s;
+	}
+
+	.nav-bar-work-expi h1:hover {
+		font-size: 45px;
+		width: 250px;
+		background: rgba(255, 255, 0, 0.25);
+	}
+
+	.card-work-expi {
+		background: none;
+		border: none;
+	}
+
+	.container-jfe > h5, .container-jgc > h5, {
+	font-family: 'Courier Prime', monospace;
+	font-size: 36px;
+	}
+
+	.container-jfe, .container-jgc, .container-jfe-jobdes, .container-jgc-jobdes {
+		width: 500px;
+		background: rgba(255, 255, 255, 0.5);
+	}
+
+
+	@media (min-width: 100px) and (max-width: 1024px) {
+		.container-jfe, .container-jgc, .container-jfe-jobdes, .container-jgc-jobdes {
+			width: 90%;
+			background: rgba(255, 255, 255, 0.5);
+		}
+	}
+
+/*end of work-expi.CSS*/
+
+/*8.) Start of hobbies.CSS*/
+	.body-hobbies {
+		background-image: url(./photos/hobbiesbg.jpg);
+		background-size: cover;
+		background-position: center;
+		overflow: auto;
+	}
+
+	.body-hobbies a {
+		color: white;
+	}
+
+	.nav-bar-hobbies h1 {
+		font-size: 35px;
+		width: 135;
+		transition: ease-out;
+		transition-property: font-size;
+		transition-duration: 0.5s;
+	}
+
+	.nav-bar-hobbies h1:hover {
+		font-size: 45px;
+		width: 250px;
+		background: rgba(255, 255, 0, 0.25);
+	}
+
+	.card-hobbies {
+		background: none;
+		border: none;
+	}
+
+	.carousel-inner img {
+		height: 60%;
+		margin: auto;
+	}
+
+	.carousel {
+		margin: auto;
+	}
+
+	.body-hobbies h1 {
+		color: white;
+	}
+
+	.hobbies-text-container {
+		background: rgba(41, 43, 44, 0.25);
+	}
+
+	.youtube-icon {
+		color: white;
+	}
+	
+/*end of hobbies.CSS*/
+
+/*9.) Start of contactinfo.CSS*/
+	.body-contact-info {
+		background-image: url(./photos/contactmebg.jpg);
+		background-size: cover;
+		background-position: center;
+		overflow: auto;
+		color: white;
+	}
+
+	.body-contact-info a {
+		color: white;
+	}
+
+	.nav-bar-contact-info h1 {
+		font-size: 35px;
+		width: 135;
+		transition: ease-out;
+		transition-property: font-size;
+		transition-duration: 0.5s;
+	}
+
+	.nav-bar-contact-info h1:hover {
+		font-size: 45px;
+		width: 250px;
+		background: rgba(255, 255, 0, 0.25);
+	}
+
+	.card-contact-info {
+		background: none;
+		border: none;
+	}
+
+	.gmail-logo-photo{
+		width: 300px;
+	}
+
+	.linkedin-logo-photo {
+		width: 300px;
+	}
+
+	.form-control {
+		width: 300px;
+		height: auto;
+	}
+
+
+/*end of contactinfo.CSS*/
+
+	@media (min-width: 1200px) {
+
+	}
+
+	@media (min-width: 992px) and (max-width: 1199.98px) {
+
+	}
+
+	@media (min-width: 768px) and (max-width: 991.98px) {
+
+	}
+
+	@media (min-width: 321px) and (max-width: 767.98px) {
+
+	}
