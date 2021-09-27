@@ -19,6 +19,11 @@
 	<!-- Link External CSS -->
 	<link rel="stylesheet" href="./styles/whole.css">
 
+	<!-- Link of AOS.css -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
 
 </head>
 <body>
@@ -100,7 +105,7 @@
 	<div class="container-fluid">
 		<div class="row align-items-center set-height">
 			<div class="col-xl-2 col-0 d-none d-xl-block">
-				<div class="container nav-bar-bio">
+				<div class="container nav-bar-bio" data-aos="fade-right">
 					<div class="row nav-home py-1">
 						<div class="col-12">
 							<h1><a href="#home">Home</a></h1>
@@ -143,16 +148,18 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xl-10 col-12">
+			<div class="col-xl-10 col-12 test-dark-bg">
 				<div class="container set-height p-0">
 					<!-- Put Page Content Here -->
 					<div class="card card-bio text-left">
 						<!-- Start of Home Icon -->
 						<a href="#home"><i class="fas fa-home fa-3x p-2 d-flex d-xl-none" id="home-icon-bio"></i></a>
 						<!-- End of Home Icon -->	
-						<div class="card-body set-height">
-							<h1>Biography</h1>
-							<p>My name is Emilio Luis Ma. N. Brioso</p>
+						<div class="card-body set-height" data-aos="zoom-in">
+							<h1 class="d-inline">Biography</h1>
+							<img src="./styles/photos/biophoto.jpg" alt="biophoto" class="bio-photo rounded-circle">
+							<p>Emilio Luis Ma. N. Brioso</p>
+							<p>Full-stack Developer</p>
 							<p>23, Male</p>
 							<p>Born in December 06, 1997</p>
 							<p>I graduated last April 2019 with a bachelor’s degree in Mechanical Engineering</p>
@@ -174,7 +181,7 @@
 	<div class="container-fluid">
 		<div class="row align-items-center set-height">
 			<div class="col-xl-2 col-0 d-none d-xl-block">
-				<div class="container nav-bar-skills">
+				<div class="container nav-bar-skills" data-aos="fade-right">
 					<div class="row nav-home py-1">
 						<div class="col-12">
 							<h1><a href="#home">Home</a></h1>
@@ -224,7 +231,7 @@
 						<!-- Start of Home Icon -->
 						<a href="#home"><i class="fas fa-home fa-3x p-2 d-flex d-xl-none" id="home-icon-skills"></i></a>
 						<!-- End of Home Icon -->	
-						<div class="card-body">
+						<div class="card-body" data-aos="flip-down">
 							<div id="accordion">
 								<p class="text-center">
 									<button class="btn btn-primary-outline" type="button" data-toggle="collapse" data-target="#front-end" aria-expanded="false" aria-controls="collapseExample">
@@ -330,7 +337,7 @@
 	<div class="container-fluid">
 		<div class="row set-height">
 			<div class="col-xl-2 col-0 d-none d-xl-block align-self-center">
-				<div class="container nav-bar-projects">
+				<div class="container nav-bar-projects" data-aos="fade-right">
 					<div class="row nav-home py-1">
 						<div class="col-12">
 							<h1><a href="#home">Home</a></h1>
@@ -382,14 +389,14 @@
 						<!-- End of Home Icon -->
 				</div>
 
-				<div class="row set-height align-items-center">
+				<div class="row set-height align-items-center"  data-aos="fade-up">
 					<div class="container d-xl-flex justify-content-between">
 						<div class="card card-first-project">
 							<img src="./styles/photos/firstproject.jpg" class="card-img-top" alt="...">
 							<div class="card-body p-2">
 								<h5 class="card-title">Clothing website</h5>
 								<p class="card-text">Clothing website made for my client's clothing business. Website provides browsing, buying, and shipping services to my client's customers.</p>
-								<a href="" class="btn btn-primary">View website</a>
+								<a class="btn btn-primary">View website</a>
 							</div>
 						</div>
 
@@ -398,7 +405,7 @@
 							<div class="card-body p-2">
 								<h5 class="card-title">Mobile app for dentists</h5>
 								<p class="card-text">Mobile app made for my client's dental clinic. Automated services are provided to their patients such as appointment scheduling and advance HMO information.</p>
-								<a href="" class="btn btn-primary">Download App</a>
+								<a class="btn btn-primary">Download App</a>
 							</div>
 						</div>
 
@@ -407,7 +414,7 @@
 							<div class="card-body p-2">
 								<h5 class="card-title">Teacher's Pet</h5>
 								<p class="card-text">Mobile app made for both students and teachers. It automates submission/checking of assignments or projects as well as attendance checking.</p>
-								<a href="" class="btn btn-primary">Check out our App demo</a>
+								<a class="btn btn-primary">Check out our App demo</a>
 							</div>
 						</div>
 					</div>
@@ -425,7 +432,7 @@
 	<div class="container-fluid">
 			<div class="row set-height">
 				<div class="col-xl-2 col-0 d-none d-xl-block align-self-center">
-					<div class="container nav-bar-work-expi">
+					<div class="container nav-bar-work-expi" data-aos="fade-right">
 						<div class="row nav-home py-1">
 							<div class="col-12">
 								<h1><a href="#home">Home</a></h1>
@@ -469,7 +476,7 @@
 					</div>
 				</div>
 				<div class="col-lg-10 col-12">
-					<div class="container set-height p-0">
+					<div class="container set-height p-0" data-aos="zoom-in">
 						<!-- Put Page Content Here -->
 
 							<!-- Start of Home Icon -->
@@ -510,7 +517,7 @@
 	<div class="container-fluid">
 		<div class="row align-items-center set-height">
 			<div class="col-xl-2 col-0 d-none d-xl-block">
-				<div class="container nav-bar-hobbies">
+				<div class="container nav-bar-hobbies" data-aos="fade-right">
 					<div class="row nav-home py-1">
 						<div class="col-12">
 							<h1><a href="#home">Home</a></h1>
@@ -562,7 +569,7 @@
 						<!-- End of Home Icon -->	
 
 						<!-- Start of Carousel -->
-						<div id="carouselExampleCaptions" class="carousel slide mt-5" data-ride="carousel">
+						<div id="carouselExampleCaptions" class="carousel slide mt-5" data-ride="carousel" data-aos="zoom-out-up">
 							<ol class="carousel-indicators">
 								<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
 								<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -640,7 +647,7 @@
 	<div class="container-fluid">
 		<div class="row align-items-center set-height">
 			<div class="col-xl-2 col-0 d-none d-xl-block">
-				<div class="container nav-bar-contact-info">
+				<div class="container nav-bar-contact-info" data-aos="fade-right">
 					<div class="row nav-home py-1">
 						<div class="col-12">
 							<h1><a href="#home">Home</a></h1>
@@ -693,15 +700,15 @@
 						<div class="card-body set-height p-0">
 							<div class="gmail mt-5">
 								<img src="./styles/photos/gmailpng.png" alt="gmail-logo-photo" class="d-none d-xl-inline gmail-logo-photo">
-								<h1 class="d-xl-inline text-xl-center text-left">brioso.emilioluis@gmail.com</h1>
+								<h1 class="d-xl-inline text-xl-center text-left set-center">brioso.emilioluis@gmail.com</h1>
 							</div>
 
 							<div class="linkedin mt-5">
 								<img src="./styles/photos/linkedinpng.png" alt="linkedin-logo-photo" class="d-none d-xl-inline linkedin-logo-photo">
-								<h1 class="d-xl-inline text-xl-center text-left">linkedin.com/in/emilio-brioso</h1>
+								<h1 class="d-xl-inline text-xl-center text-left set-center">linkedin.com/in/emilio-brioso</h1>
 							</div>
 
-							<h1 class="text-xl-center text-left mt-xl-0 mt-5">0921-263-2263 (smart)</h1>
+							<h1 class="text-xl-center text-left mt-xl-0 mt-5 set-center">0921-263-2263 (smart)</h1>
 
 							<form action="" class="d-xl-flex justify-content-center align-items-center mt-5">
 								<div class="form-group">
@@ -730,5 +737,22 @@
 
 		<!-- Link of bootstrap js -->
 		<script src="./bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Link of AOS.js -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<!-- AOS Initialize -->
+		<script>
+		  AOS.init();
+		</script>
 </body>
+
+<footer>
+	<div class="bg-secondary p-3 m-0 container-fluid">
+		<h2 class="text-white">Contact</h2>
+		<h5 class="text-white">Facebook <i class="fab fa-1x fa-facebook"></i> facebook.com/emaluis</h5>
+		<h5 class="text-white">Gmail <i class="fas fa-1x fa-envelope"></i> brioso.emilioluis@gmail.com</h5>
+		<h5 class="text-white">Linked-in <i class="fab fa-1x fa-linkedin"></i> linkedin.com/in/emilio-brioso</h5>
+	</div>
+</footer>
 </html>

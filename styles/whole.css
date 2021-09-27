@@ -41,7 +41,7 @@ html, body {
 .body-start {
 	background-color: black;
 	animation: start-bg-change 1s;
-	animation-delay: 5s;
+	animation-delay: 3s;
 	animation-fill-mode: forwards;
 }
 
@@ -75,7 +75,7 @@ html, body {
 		width: 300px;
 		background: rgba(41, 43, 44, 0.25);
 		animation: fade-in-h3 3s;
-		animation-delay: 8s;
+		animation-delay: 4s;
 		animation-fill-mode: backwards;
 	}
 
@@ -129,7 +129,7 @@ html, body {
 		background-image: url(./photos/homepagebg.jpg);
 		background-size: cover;
 		background-position: center;
-		overflow: hidden;
+		overflow: auto;
 	}
 
 	.nav-bar-bio h1 {
@@ -160,9 +160,16 @@ html, body {
 		padding: 20px;
 	}
 
-	.card-bio > div{
-		background: rgba(41, 43, 44, 0.25);
+
+	.test-dark-bg {
+		background: rgba(41, 43, 44, 0.5);
 	}
+
+	.bio-photo {
+		width: 300px;
+		float: right;
+	}
+
 
 	@media (min-width: 1200px) and (max-width: 9999.98px){
 		.card-body {
@@ -180,6 +187,7 @@ html, body {
 			color: white;
 			font-size: 24px;	
 		}
+
 	}
 
 	@media (min-width: 992px) and (max-width: 1199.98px){
@@ -823,6 +831,10 @@ html, body {
 		height: auto;
 	}
 
+	@media (min-width: 768px) and (max-width: 1024px) {
+		.body-contact-info {
+		overflow: hidden;
+	}
 
 /*end of contactinfo.CSS*/
 
@@ -841,3 +853,10 @@ html, body {
 	@media (min-width: 321px) and (max-width: 767.98px) {
 
 	}
+
+	/*footer.css*/
+	footer {
+		font-family: 'Montserrat', sans-serif;
+		color: white;
+	}
+
