@@ -256,6 +256,7 @@ html, body {
 		.bio-photo {
 			width: 300px;
 			display: block;
+			text-align: center;
 		}	
 	}
 
