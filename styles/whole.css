@@ -23,7 +23,7 @@ html, body {
 }
 
 .h1-prestart {
-	font-size: 96px;
+	font-size: 64px;
 }
 
 .pre-start-h1-fade {
@@ -162,9 +162,13 @@ html, body {
 
 
 	.test-dark-bg {
-		background: rgba(41, 43, 44, 0.5);
+		background: rgba(41, 43, 44, 0.75);
 	}
 
+	.full-name {
+		font-size: 45px;
+		color: white;
+	}
 
 	@media (min-width: 1200px) and (max-width: 9999.98px){
 		.card-body {
@@ -727,14 +731,14 @@ html, body {
 
 	.container-jfe, .container-jgc, .container-jfe-jobdes, .container-jgc-jobdes {
 		width: 500px;
-		background: rgba(255, 255, 255, 0.5);
+		background: rgba(255, 255, 255, 0.75);
 	}
 
 
 	@media (min-width: 100px) and (max-width: 1024px) {
 		.container-jfe, .container-jgc, .container-jfe-jobdes, .container-jgc-jobdes {
 			width: 90%;
-			background: rgba(255, 255, 255, 0.5);
+			background: rgba(255, 255, 255, 0.75);
 		}
 	}
 
@@ -785,7 +789,7 @@ html, body {
 	}
 
 	.hobbies-text-container {
-		background: rgba(41, 43, 44, 0.25);
+		background: rgba(41, 43, 44, 0.75);
 	}
 
 	.youtube-icon {
@@ -834,16 +838,18 @@ html, body {
 		width: 300px;
 	}
 
-	.form-control {
-		width: 300px;
-		height: auto;
+	.text-area {
+		height: 100%;
 	}
 
-	@media (min-width: 768px) and (max-width: 1024px) {
-		.body-contact-info {
-		overflow: hidden;
+	@media (min-width: 100px) and (max-width: 600px) {
+		.set-font-size h1 {
+			font-size: 24px;
+		}
 	}
 
+
+	
 /*end of contactinfo.CSS*/
 
 	@media (min-width: 1200px) {

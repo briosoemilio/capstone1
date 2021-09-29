@@ -149,7 +149,7 @@
 				</div>
 			</div>
 			<div class="col-xl-10 col-12 test-dark-bg">
-				<div class="container set-height p-0">
+				<div class="container p-0">
 					<!-- Put Page Content Here -->
 					<div class="card card-bio text-left">
 						<!-- Start of Home Icon -->
@@ -158,7 +158,7 @@
 						<div class="card-body set-height" data-aos="zoom-in">
 							<h1 class="d-inline">Biography</h1>
 							<img src="./styles/photos/biophoto.jpg" alt="biophoto" class="bio-photo rounded-circle">
-							<p>Emilio Luis Ma. N. Brioso</p>
+							<h2 class="full-name mt-2">Emilio Luis Ma. N. Brioso</h2>
 							<p>Full-stack Developer</p>
 							<p>23, Male</p>
 							<p>Born in December 06, 1997</p>
@@ -166,7 +166,6 @@
 							<p>Got my Registered Mechanical Engineer license last August 2019</p>
 							<p>I’ve worked as an Automated 3D Model designer of multiple mechanical components as well as being a System Equipment engineer for 2years.</p>
 							<p>I’ve recently finished my Web Development Bootcamp Training in December 2021, and currently shifting my career towards the IT industry.</p>
-
 						</div>
 					</div>
 				</div>
@@ -247,7 +246,7 @@
 									</button>
 								</p>
 								
-								<div class="collapse" id="front-end" data-parent="#accordion">
+								<div class="collapse show" id="front-end" data-parent="#accordion">
 									<div class="card card-body-front-end">
 										<div class="container m-0">
 											<div class="row">
@@ -393,7 +392,7 @@
 					<div class="container d-xl-flex justify-content-between">
 						<div class="card card-first-project">
 							<img src="./styles/photos/firstproject.jpg" class="card-img-top" alt="...">
-							<div class="card-body p-2">
+							<div class="card-body p-3">
 								<h5 class="card-title">Clothing website</h5>
 								<p class="card-text">Clothing website made for my client's clothing business. Website provides browsing, buying, and shipping services to my client's customers.</p>
 								<a class="btn btn-primary">View website</a>
@@ -402,7 +401,7 @@
 
 						<div class="card card-first-project">
 							<img src="./styles/photos/secondproject.jpg" class="card-img-top" alt="...">
-							<div class="card-body p-2">
+							<div class="card-body p-3">
 								<h5 class="card-title">Mobile app for dentists</h5>
 								<p class="card-text">Mobile app made for my client's dental clinic. Automated services are provided to their patients such as appointment scheduling and advance HMO information.</p>
 								<a class="btn btn-primary">Download App</a>
@@ -411,7 +410,7 @@
 
 						<div class="card card-first-project">
 							<img src="./styles/photos/thirdproject.jpg" class="card-img-top" alt="...">
-							<div class="card-body p-2">
+							<div class="card-body p-3">
 								<h5 class="card-title">Teacher's Pet</h5>
 								<p class="card-text">Mobile app made for both students and teachers. It automates submission/checking of assignments or projects as well as attendance checking.</p>
 								<a class="btn btn-primary">Check out our App demo</a>
@@ -691,40 +690,54 @@
 				</div>
 			</div>
 			<div class="col-xl-10 col-12">
-				<div class="container set-height p-0">
+				<div class="container-fluid set-height p-0">
 					<!-- Put Page Content Here -->
-					<div class="card card-contact-info text-left">
+					<div class="row p-0">
 						<!-- Start of Home Icon -->
 						<a href="#home"><i class="fas fa-home fa-3x p-2 d-flex d-xl-none" id="home-icon-contact-info"></i></a>
-						<!-- End of Home Icon -->	
-						<div class="card-body set-height p-0">
-							<div class="gmail mt-5">
-								<img src="./styles/photos/gmailpng.png" alt="gmail-logo-photo" class="d-none d-xl-inline gmail-logo-photo">
-								<h1 class="d-xl-inline text-xl-center text-left set-center">brioso.emilioluis@gmail.com</h1>
-							</div>
-
-							<div class="linkedin mt-5">
-								<img src="./styles/photos/linkedinpng.png" alt="linkedin-logo-photo" class="d-none d-xl-inline linkedin-logo-photo">
-								<h1 class="d-xl-inline text-xl-center text-left set-center">linkedin.com/in/emilio-brioso</h1>
-							</div>
-
-							<h1 class="text-xl-center text-left mt-xl-0 mt-5 set-center">0921-263-2263 (smart)</h1>
-
-							<form action="" class="d-xl-flex justify-content-center align-items-center mt-5">
-								<div class="form-group">
-									<label for="exampleFormControlTextarea1">Enter message:</label>
-									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-								</div>
-								<button type="submit" class="btn btn-dark">Request for quotation</button>
+						<!-- End of Home Icon -->
+					</div>
+					
+					<div class="row set-height p-0 m-0 d-flex align-items-center justify-content-center set-font-size">
+						<div class="container-fluid">
+							<img src="./styles/photos/gmailpng.png" alt="gmail-logo-photo" class="gmail-logo-photo d-inline">
+							<h1 class="d-inline">brioso.emilioluis</h1>
+						</div>
+						<div class="container-fluid">
+							<img src="./styles/photos/linkedinpng.png" alt="linkedin-logo-photo" class="d-inline linkedin-logo-photo">
+							<h1 class="d-inline">linkedin.com/in/emilio-brioso</h1>
+						</div>
+						<div class="container-fluid">
+							<h1 class="d-block mb-3">0921-263-2263 (smart)</h1>
+						</div>
+						<div class="form-width">
+							<h1 class="text-left">Contact me!</h1>
+							<form>
+							  <div class="row">
+							    <div class="col">
+							      <input type="text" class="form-control" placeholder="Full name">
+							    </div>
+							    <div class="col">
+							      <input type="text" class="form-control" placeholder="Email address">
+							    </div>
+							  </div>
+							  <div class="row mt-4">
+							  	<div class="col">
+							  		<textarea rows="7" class="form-control text-area is-invalid" id="validationTextarea" placeholder="Send me your query!" required></textarea>
+							  		<div class="invalid-feedback">
+							  			Please enter a message in the textarea.
+							  		</div>
+							  		<input class="btn btn-dark" type="submit" value="Send!">
+							  	</div>
+							  </div>
 							</form>
-
-
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 <!-- End of Contact Info Page -->
 
